@@ -1,8 +1,10 @@
 (function(window) {
-  var helloSpeaker = {};
+  var helloSpeaker = new Object();
+  var speakWord = "hello"
+
   helloSpeaker.speak = function(name) {
-    console.log(speakWord + " " + name);
-  }
-  var speakWord = "Hello";
+    console.log(speakWord + "" + name);
+  };
+
   window.helloSpeaker = helloSpeaker;
-}(window));
+})(window);
